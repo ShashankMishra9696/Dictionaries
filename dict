@@ -1,0 +1,14 @@
+info = {"name": "Shashank", "age": 19, "eligible": "True" }
+
+print(info["name"])        #It gives an error when wrong...
+print(info.get("name"))    #But it only returns None when wrong...
+print(info.keys())
+print(info.values())
+
+for keys in info.keys():
+  print(f"The values corresponding to key {keys} are {info[keys]}")
+
+print(info.items())
+for keys,values in info.items():
+  print(f"The values corresponding to key {keys} are {values}")
+  
